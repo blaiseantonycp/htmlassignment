@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function fetch(){
+        var url = window.location.href;
+        var name = url.split("=");
+        document.getElementById("name").innerHTML=name[1];
+      }
+    </script>
+  </head>
+  <body onload="fetch()">
+    <h1>Welcome Mr. <span id="name"></span></h1>
+  </body>
+</html>
